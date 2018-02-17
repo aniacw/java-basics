@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 public class Exercise1 {
     public static void main(String[] args){
-
         Scanner scanner = new Scanner(System.in);
-
         int index = 0;
         System.out.println("Give the number");
         int number = scanner.nextInt();
@@ -18,7 +16,7 @@ public class Exercise1 {
             number = scanner.nextInt();
             index ++;
             if(number!=150){
-                theNumbers[index] = number;//150 nie powinno bycw ogole dodane do tablicy?
+                theNumbers[index] = number;//150 nie powinno byc w ogole dodane do tablicy?
             }
         }
 
@@ -39,18 +37,14 @@ public class Exercise1 {
         double average = sum/count;
         System.out.println("Average: " + average);
 
-        int count2 = 0;
+        System.out.println("Divided by 3:");
         for(int i = 0; i<theNumbers.length; i++){
-            if(theNumbers[index] % 3 ==0){
-                count2++;
-                System.out.println(count2);
+            if(theNumbers[i] != 0 && theNumbers[i] % 3 == 0){
+                System.out.println(theNumbers[i]);
+            }
         }
-
-        }
-
-
-
-
-
     }
 }
+//1. Napisać program, który wczytuje od użytkownika liczby, do momentu aż zostanie podana liczba 150.
+//        Po zakończeniu działania programu wyświetlona zostaje informacja o sumie oraz średniej z wszystkich
+//        podanych liczb (poza 150) oraz jak wiele podanych zostało liczb dodatnich, podzielnych przez 3.
